@@ -14,14 +14,14 @@ function Login() {
     console.log('Username:', username);
     console.log('Password:', password);
 
-    if (username === 'admin' && password === 'password') {
+    if (username === 'admin' && password === 'admin123') {
       console.log('Login successful');
       localStorage.setItem('isAuthenticated', 'true');
     //   navigate('/machinedata-hidden');
       window.location.reload(); 
     } else {
       console.log('Invalid credentials');
-      alert('Invalid credentials');
+      alert('Invalid username or password !');
     }
   };
 
