@@ -13,7 +13,7 @@ function Wards({ selectedZones, onSelectWard }) {
 
     useEffect(() => {
         if (selectedZones.length > 0) {
-            fetch(`http://localhost:7000/wards?zones=${selectedZones.join(',')}`)
+            fetch(`https://darkslategray-hippopotamus-856839.hostingersite.com/dashboard-api/wards?zones=${selectedZones.join(',')}`)
                 .then(response => response.json())
                 .then(data => {
                     // console.log('Fetched wards:', data);
