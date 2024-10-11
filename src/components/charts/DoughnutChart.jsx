@@ -6,7 +6,7 @@
 // var pieOfflineMachines;
 // var pieOnlineMachines;
 
-// const API = "http://localhost:7000/machines";
+// const API = "https://darkslategray-hippopotamus-856839.hostingersite.com/dashboard-api/machines";
 
 // export default function DoughnutChart() {
 
