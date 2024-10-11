@@ -1,0 +1,74 @@
+/* General styles for the table container */
+.table-container {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling for the upper table section */
+  .upper-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0; /* Ensures no gaps between borders */
+    margin-bottom: 0;
+  }
+  
+  .upper-table td {
+    border: 1px solid #ccc; /* Lighter border color */
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Styling for the lower table section */
+  .report-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 0;
+  }
+  
+  .report-table td,
+  .report-table th {
+    border: 1px solid #ccc; /* Adjusted border color */
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Column widths */
+  .report-table .column-srNo {
+    width: 10%;
+  }
+  
+  .report-table .column-machineId {
+    width: 15%;
+  }
+  
+  .report-table .column-machineLocation {
+    width: 25%;
+  }
+  
+  .report-table .column-address {
+    width: 30%;
+  }
+  
+  .report-table .column-machineType {
+    width: 15%;
+  }
+  
+  .report-table .column-vendingDate,
+  .report-table .column-vendingQty,
+  .report-table .column-vendingCash,
+  .report-table .column-vendingOnTime {
+    width: 10%; /* Adjust as needed */
+  }
+  
+  .report-table .column-burnCycles,
+  .report-table .column-sanNapkinsBurnt {
+    width: 10%; /* Adjust as needed */
+  }
+  
+  /* Remove margins and padding to make the tables look like one */
+  table {
+    margin: 0;
+    padding: 0;
+  }
+  

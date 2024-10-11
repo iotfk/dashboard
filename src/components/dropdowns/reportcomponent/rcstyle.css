@@ -1,0 +1,14 @@
+.dady-container{
+    display: flex;
+    gap: 1vw;
+
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.child-container{
+    min-width: 25%;
+    max-width: 30%;
+    margin-left: 2px;
+    margin-right: 2px ;
+}

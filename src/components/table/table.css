@@ -1,0 +1,390 @@
+.responsive-table-container {
+  width: 100%;
+ 
+  margin: auto;
+  padding: 10px; 
+  background-color: white;
+  border-radius: 8px; 
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12); 
+}
+
+.responsive-table-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.22); /* Slightly deeper shadow on hover */
+}
+
+.table-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.responsive-table th,
+.responsive-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.responsive-table th {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.pagination button {
+  margin: 0 5px;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination-container li {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination-active {
+  font-weight: bold;
+}
+
+.status-online,
+.status-offline {
+  background-color: #6AB21C;
+  color: white;
+  padding: 4px 14px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 15px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.stock-ok {
+  color: white;        
+  background-color: #6AB21C;
+  padding: 4px 26px;
+  border-radius: 12px;
+  width: 70px;
+  height: 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.stock-loww {
+  color: white;        
+  background-color: rgb(255, 215, 64);
+  padding: 4px 26px;
+  border-radius: 12px;
+  width: 70px;
+  height: 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.stock-emptyy {
+  color: rgb(255, 255, 255);        
+  background-color: rgb(255, 82, 82);
+  padding: 4px 21px;
+  border-radius: 12px;
+  width: 70px;
+  height: 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Specific colors for online and offline statuses */
+.status-online {
+  background-color: #6AB21C;
+}
+
+.status-offline {
+  background-color: #FF1616;
+}
+
+
+/* Button styling */
+.info-button {
+  padding: 5px 10px;
+  background-color: white;
+  color: #6AB21C;
+  border: 1px solid #6AB21C;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.info-button:hover {
+  background-color: #6AB21C;
+  color: white;
+}
+
+
+/* Example custom styles for the modal */
+.react-responsive-modal {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.react-responsive-modal .modal-close {
+  color: #333;
+}
+
+
+.highlighted-text {
+  font-weight: bold;
+  color: #000;
+}
+
+
+
+.stock-low {
+  color: orange;
+}
+
+.stock-empty {
+  color: red;
+}
+
+.stock-ok,
+.stock-low,
+.stock-empty {
+  text-align: center;
+  justify-content: center;
+}
+
+.stockstatus-cell,
+.stockClass {
+  text-align: center; 
+  justify-content: center;
+}
+
+
+.search-boxx {
+ max-width : 300px;
+ height: 20px;
+  padding: 8px 12px;
+  margin-top: 10px;
+ margin-right: 5px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-boxx:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Styling for the limit select box */
+.limit-box {
+  width: 30px;
+  padding: 4px 10px;
+  margin-left: 1px;
+  margin-top: 5px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  appearance: none;
+  height: 30px;
+}
+
+.limit-box:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.limit-box option {
+  padding: 8px;
+}
+.show-entries{
+  font-size: 13px ;
+  padding: 5px;
+  color: #8b8585d3;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+
+.responsive-table-container td:nth-child(1), 
+.responsive-table-container td:nth-child(4), 
+.responsive-table-container td:nth-child(5) { 
+  text-align: center;
+}
+
+
+
+
+/* 
+pagination style */
+
+/* Pagination container styling */
+
+/* Styling for the ReactPaginate component */
+
+
+.pagination {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between; /* Aligns the children to the ends of the parent */
+  align-items: center; /* Keeps both divs vertically aligned in the center */
+  padding-top: 20px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.pageindex-div {
+  font-size: 16px; /* Adjust font size as needed */
+  margin-left: 10px; /* Adds some left margin for spacing */
+}
+
+.pagination-div {
+  flex-grow: 1; /* Allows this div to grow and take up remaining space */
+  display: flex;
+  justify-content: flex-end; /* Aligns the pagination to the absolute right */
+}
+
+ul.react-paginate {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0; /* Aligns with page index text */
+}
+
+ul.react-paginate li a,
+ul.react-paginate li.previous a,
+ul.react-paginate li.next a,
+ul.react-paginate li.break a {
+  padding: 10px 15px;
+  border: gray 1px solid;
+  cursor: pointer;
+}
+
+ul.react-paginate li.selected a {
+  background-color: #4903d6;
+  border-color: transparent;
+  color: white;
+}
+
+ul.react-paginate li.disabled a {
+  color: grey;
+}
+
+ul.react-paginate li.disable,
+ul.react-paginate li.disabled a {
+  cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  /* display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: auto; */
+
+
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px; /* Adjust width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.458);
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.modal-details {
+  margin-top: 10px;
+}
+
+.modal-details p {
+  display: flex; /* Aligns label and value in a row */
+  align-items: baseline; /* Aligns items vertically */
+  margin: 5px 0;
+}
+
+.modal-details strong {
+  display: inline-block;
+  width: 130px; /* Fixed width to align all values */
+  margin-right: 80px; /* Adds space between label and value */
+  text-align: left;
+}
+
+.close-button {
+ 
+  padding: 8px 10px 5px 10px;
+  background-color: #f30b68;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* margin-left: auto;
+  align-self: flex-end; */
+  margin-left: 25px;
+ 
+  /* margin-bottom: 50px; */
+  /* align-self:self-end */
+}
+
+.close-button:hover {
+  background-color: #0056b3;
+}
+
+.model-head{
+   display: flex;
+   /* gap: 3rem; */
+   flex-direction: row;
+}
+
+.space-div{
+  width: 60px;
+}

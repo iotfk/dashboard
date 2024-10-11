@@ -1,0 +1,63 @@
+/* #multi_option{
+	max-width: 100%;
+	width: 350px;
+}
+label{
+	display:block;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+.vscomp-toggle-button{
+	padding: 10px 30px 10px 10px;
+	border-radius: 5px;
+}
+
+.zoneSelect{
+  width: 150px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+ .my-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  font-family: 'Arial', sans-serif;
+} 
+
+h4 {
+    color: #6B51DFff;
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+
+  .areaClass{
+    display:flex;
+  }
+
+  .tick{
+    
+     cursor: pointer;
+     background-color: #6AB21C;
+     border-radius: 5px;
+     padding: 11px ;
+  }
+  .cross{
+
+   padding: 11px;
+    cursor: pointer;
+    background-color: #EF0000;
+    border-radius: 5px;
+  } 
+  .dd-container{
+  min-width: 60%;
+  margin-left: 2px;
+  margin-right: 2px ;
+  } */

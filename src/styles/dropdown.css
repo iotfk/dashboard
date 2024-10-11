@@ -1,0 +1,90 @@
+.multiselect-container {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    border-radius: 10x;
+  }
+  
+  .multiselect-btn {
+    width: 100%;
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    text-align: left;
+    position: relative; 
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  }
+  
+  .dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 99%; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 8px 0; 
+    border: 1px solid #ddd;
+    max-height: 200px;
+    overflow-y: auto; 
+  
+  }
+  
+  .dropdown-content label {
+    display: block;
+    padding: 8px 16px;
+    cursor: pointer;
+ font-size: 14px; 
+  }
+  
+  .clear-btn {
+    width: 100%;
+    padding: 5px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+  .selected-options {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+
+  .multiselect-btn {
+    width: 100%;
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    text-align: left;
+    position: relative; /* Relative positioning for containing the icon */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .clear-icon {
+    position: absolute;
+    right: 10px; /* Adjust spacing from the right */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+    color: #999;
+  }
+
+  .arrow-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #999;
+  }
+  

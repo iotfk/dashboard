@@ -1,0 +1,145 @@
+
+.circle-color1 {
+    border: 4px solid blueviolet;
+}
+.card_icon1{
+    color: blueviolet;
+}
+.circle-color2 {
+    border: 4px solid rgb(255, 184, 59);
+}
+.card_icon2{
+    color: rgb(255, 184, 59);
+}
+
+.circle-color3 {
+    border: 4px solid rgb(126, 211, 33);
+}
+.card_icon3{
+    color: rgb(126, 211, 33);;
+}
+
+.circle-color4 {
+    border: 4px solid rgb(80, 227, 194);
+}
+.card_icon4{
+    color: rgb(80, 227, 194);;
+}
+
+.circle-color5 {
+    border: 4px solid rgb(241, 8, 8);
+}
+.card_icon5{
+    color: rgb(241, 8, 8);
+}
+
+.icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;  /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the div circular */
+    /* border: 4px solid hwb(113 2% 13%);  */
+    /* background-color: #f8f8f8; */
+  }
+  
+  .card_icon {
+    font-size: 24px; /* Adjust size of the icon */
+    /* color: rgb(69, 243, 16);  */
+  }
+  
+  .innercards {
+    display: flex;
+    flex-direction: row; /* Aligns children vertically */
+    align-items: center; /* Centers content horizontally */
+  }
+  
+  .text-container {
+    text-align: center; /* Centers text */
+    margin-top: 10px; /* Adds space between icon and text */
+  }
+  
+  .text-title {
+    font-weight: bold; /* Makes the text bold */
+    margin: 0; /* Removes default margin */
+  }
+  
+  h1 {
+    margin-top: 0; /* Removes any default margin at the top */
+  }
+  
+  .main-container {
+    padding: 20px;
+  }
+  
+  .main-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .maincards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+   
+  }
+  
+  .cards {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 1 1; /* Adjust card width to fit 4 in a row on full screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 20px;
+    min-width: 20px; /* Minimum width for the card */
+    transition: transform 0.3s ease;
+  }
+  
+  .cards:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+  }
+  
+  .innercards {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .textcontainer {
+    text-align: left;
+  }
+  
+  .text-title {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+  }
+  
+
+  @media (max-width: 768px) {
+    .main-cards {
+      gap: 10px;
+    }
+  
+    .card {
+      flex: 1 1 calc(50% - 10px); /* Adjust card width for mobile view */
+    }
+  
+ 
+  }
+  

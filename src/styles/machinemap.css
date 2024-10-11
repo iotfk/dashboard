@@ -1,0 +1,373 @@
+.my-map-container {
+    display: flex;
+    height: 100vh;
+    margin-top: -20px;
+    margin-left: -19px;
+}
+
+.child1 {
+    margin-top: 30px;
+    flex: 0 0 20%;
+    /* Takes 30% of the width */
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    max-width: max-content;
+
+}
+
+.child2 {
+    flex: 0 0 75%;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+.grand-child {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3px;
+    height: max-content;
+    padding: 5px;
+    border: 1px solid rgb(146, 140, 140);
+    box-sizing: border-box;
+    /* max-width: 80%; */
+
+
+}
+
+.grand-child>div {
+    flex: 1;
+    margin: 1px;
+
+}
+
+.search-container {
+    margin-top: 20px;
+    margin-bottom: 0px;
+
+}
+
+.search-box {
+    margin-top: 10px;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-box::placeholder {
+    color: #888;
+}
+
+.floating-cb {
+    position: absolute;
+    bottom: 67px;
+    right: 10px;
+    width: 320px;
+    height: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.floating-checkbox {
+    display: flex;
+    align-items:last flex-end;
+    width: 100%;
+    gap: 5px;
+    flex-wrap: wrap; 
+}
+
+.small-checkbox {
+    display: flex;
+    align-items: center;
+    margin: 2px 0;
+    align-self:flex-end;
+}
+
+.small-checkbox {
+    font-size: 14px; 
+    margin-left: 6px; 
+    line-height: 1; 
+    margin-bottom: 5px;
+}
+
+
+.small-checkbox .state .icon {
+    transform: scale(0.8);
+    width: 16px; 
+    height: 16px;
+    margin-top: 3px;
+}
+
+.small-checkbox .state .icon:before,
+.small-checkbox .state .icon:after {
+    width: 16px;
+    height: 16px;   
+}
+
+
+
+/* .floating-checkbox label {
+    margin-right: 5px; 
+} */
+
+
+/* Custom Checkbox Styling */
+/* .custom-checkbox {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #f0f0f0;
+    border: 1px solid #383535;
+    border-radius: 50%; 
+    cursor: pointer;
+    outline: none;
+}
+
+.custom-checkbox:checked {
+    background-color: #ffffff;
+    border: 1px solid #0060B3;
+}
+
+.custom-checkbox:checked::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #0060B3;
+    border-radius: 50%;
+    top: 1px;
+    left: -2px;
+    right: 3px;
+}
+ */
+
+
+
+ .floating-container{
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 3.2rem;
+    width: 440px;
+    height: 590px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    /* padding: 10px; */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 0.3rem;
+
+
+
+ }
+
+ 
+
+
+.floating-heading{
+   align-self: center;
+   font-size: 30px;
+   font-weight:bold;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Floating div styles */
+.floating-div {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 680px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.floating-buttons {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.floating-btn {
+    padding: 5px 10px;
+    border: 1px solid #0060B3;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Semi-transparent background */
+    border-radius: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.4s;
+    /* Add transform for scaling effect */
+    color: #0060B3;
+    margin: 2px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add box shadow */
+
+}
+
+.floating-btn:hover {
+    background-color: #0060B3;
+    color: aliceblue;
+    transform: scale(1.05);
+    /* Scale the button on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    /* Intensify the shadow on hover */
+
+}
+
+
+.master-container-one{
+    background-color: #ffffff;
+    height: 35%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+   
+}
+
+.cards-containerOne{
+   margin-left: .9rem;
+   /*   margin-top: .7rem; */
+    background-color: rgb(255, 255, 255);
+    width: 45%;
+    height: 85%;
+}
+.cards-containerTwo{
+     margin-left: .7rem;
+ /*   margin-top: .7rem; */
+    background-color: rgb(255, 255, 255);
+    width: 45%;
+    height: 85%;
+}
+
+
+.master-cards-container{
+    /* background-color:blueviolet; */
+    height: 70%;
+    width: 99.50%;
+    padding-bottom: .5rem;
+}
+
+.cards-rowone{
+    margin-top: 5px;
+    height: 24%;
+
+    /* background-color: burlywood; */
+    display: flex;
+    gap: .3rem;
+    
+}
+
+.my-cards{
+    margin: 3px;
+    height: 90%;
+    width: 33%;
+    background-color:#D9D9D9;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+     transition: background-color 0.3s, transform 0.4s;
+}
+
+.my-cards:hover{
+    transform: scale(1.03);
+    /* Scale the button on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s, transform 0.4s;
+    cursor: pointer;
+}
+
+
+.cards-rowtwo{
+    margin-top: 5px;
+    height: 24%;
+
+    /* background-color: rgb(244, 147, 20); */
+    display: flex;
+    gap: .3rem;
+}
+
+.cards-rowthree{
+    margin-top: 5px;
+    height: 24%;
+
+    /* background-color: rgb(92, 242, 12); */
+    display: flex;
+    gap: .3rem;
+}
+
+.cards-rowfour{
+    margin-top: 5px;
+    height: 24%;
+
+   
+    display: flex;
+    gap: .3rem;
+}
+
+
+.icons-div{
+    padding-top: 10px;
+    align-self: center;
+    font-size: 25px;
+    color: green;
+}
+/* p4{ 
+  color: #000;
+} */
+
+.icon-text{
+   
+    
+  
+    text-align: center;
+}
+.icon-div-text{
+   
+     color: #000;
+}
+/* 
+import {
+    FaLayerGroup,
+    FaPowerOff,
+    FaScrewdriverWrench,
+    FaIndianRupeeSign,
+    FaFireFlameSimple,
+    FaFireFlameCurved,
+    FaFire,
+    FaBatteryQuarter,
+    FaBatteryHalf,
+    FaBatteryFull,
+    FaBatteryEmpty,
+    FaRecycle
+  } from "react-icons/fa6"; */
+
+
+
+

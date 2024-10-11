@@ -1,0 +1,138 @@
+.multiselect-container {
+    position: relative;
+    display: inline-block;
+    min-width: 50%;
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    min-height: 20px;
+    max-height: 25px;
+  }
+  
+  .multiselect-btn {
+    width: 100%;
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    text-align: left;
+    position: relative; 
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  }
+  
+  .dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #7be723;
+    min-width: 99%; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 8px 0; 
+    border: 1px solid #ddd;
+    max-height: 200px;
+    overflow-y: auto; 
+    margin-top: 0px;
+    
+  
+  }
+  
+  .dropdown-content label {
+    display: block;
+    padding: 8px 16px;
+    cursor: pointer;
+ font-size: 14px; 
+  }
+  
+  .clear-btn {
+    width: 100%;
+    padding: 5px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+  .selected-options {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+
+  .multiselect-btn {
+    width: 100%;
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    text-align: left;
+    position: relative; /* Relative positioning for containing the icon */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #333;
+  }
+  
+  .clear-icon {
+    position: absolute;
+    right: 10px; /* Adjust spacing from the right */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+    color: #999;
+  }
+
+  .arrow-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #999;
+  }
+  
+  .my-main-container {
+    max-width: 300px;
+    min-width: 100px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 10px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    font-family: 'Arial', sans-serif;
+  } 
+
+
+  .areaClass{
+    display:flex;
+  }
+
+  .tick{
+     cursor: pointer;
+     background-color: #6AB21C;
+     border-radius: 5px;
+     padding: 8px ;
+     max-height: 18px;
+  }
+  .cross{
+
+   padding: 8px;
+    cursor: pointer;
+    background-color: #EF0000;
+    border-radius: 5px;
+    max-height: 18px;
+  }
+  .single-dropdown{
+    margin-top: 20px;
+  }
+
+
+  .my-dd-container{
+    border-radius: 10px;
+  }

@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .pie-chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  .chart-container {
+    position: relative;
+    width: 98%;
+    height: 98%;
+    margin-bottom: 0px;
+  }
+  
+  .pie-chart {
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(
+      var(--colorA, #4caf50) 0% 30%,
+      var(--colorB, #ff5722) 30% 100%
+    );
+    border-radius: 50%;
+  }
+  
+  .controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .control-input {
+    margin: 10px;
+  }
+  
+  .controls input {
+    margin-left: 10px;
+    padding: 5px;
+    width: 100px;
+  }
+  
+  .controls button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .chart-container {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .controls input {
+      width: 80px;
+    }
+  }
+  

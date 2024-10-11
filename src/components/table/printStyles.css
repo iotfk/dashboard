@@ -1,0 +1,42 @@
+@media print {
+    /* Hide the metadata on all pages */
+    .print-metadata {
+        display: none;
+    }
+
+    /* Ensure that the metadata is visible only on the first page */
+    .print-metadata:first-of-type {
+        display: block;
+    }
+
+    /* Adjust the print layout */
+    @page {
+        size: auto;
+        margin: 20mm;
+    }
+
+    /* Add padding to table cells */
+    table, th, td {
+        padding: 8px;
+        border-collapse: collapse;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+    }
+
+    /* Ensure that the metadata section appears only on the first page */
+    .page-break {
+        display: block;
+        page-break-before: always;
+    }
+
+    /* Hide the print metadata on subsequent pages */
+    .print-metadata {
+        display: none;
+    }
+}
