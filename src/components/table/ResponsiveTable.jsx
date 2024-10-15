@@ -153,10 +153,24 @@ const handleViewClick = (machineString) => {
   };
 
 
+  // useEffect(() => {
+  //   fetchData(API);
+  //   fetchWords(wardAPI);
+  // }, []);
+
+
   useEffect(() => {
+  // Fetch machine data every 2 seconds
+  const intervalId = setInterval(() => {
     fetchData(API);
-    fetchWords(wardAPI);
-  }, []);
+  }, 2000); // 2000ms = 2 seconds
+
+  // Fetch ward data only once
+  fetchWords(wardAPI);
+
+  // Cleanup interval on component unmount
+  return () => clearInterval(intervalId);
+}, []);
 
 
   const fetchData = async (url) => {
