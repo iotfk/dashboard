@@ -160,10 +160,10 @@ const handleViewClick = (machineString) => {
 
 
   useEffect(() => {
-  // Fetch machine data every 2 seconds
+  // Fetch machine data every 200 ms
   const intervalId = setInterval(() => {
     fetchData(API);
-  }, 2000); // 2000ms = 2 seconds
+  }, 200); // 2000ms = 2 seconds
 
   // Fetch ward data only once
   fetchWords(wardAPI);
