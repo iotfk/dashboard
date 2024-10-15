@@ -131,7 +131,7 @@ function Wards({ selectedZones, onSelectWard }) {
 
     return (
         <div className='my-main-container'>
-            <h4>Ward</h4>
+            <h4>Level 2</h4>
             <div className="areaClass">
                 <div className="tick">
                     <FaCheck />
