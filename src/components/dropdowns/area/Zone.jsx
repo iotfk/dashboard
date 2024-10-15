@@ -78,7 +78,7 @@ function Zone({ onSelectZone }) {
 
   return (
     <div className='my-main-container'>
-      <h4>Zone</h4>
+      <h4>Level 1</h4>
       <div className="areaClass">
         <div className="tick">
           <FaCheck />
