@@ -5,8 +5,8 @@ import './table.css'
 import { FaCheck, FaXmark } from "react-icons/fa6";
 import { MachineContext } from '../../hooks/ContextAPI/MachineContext';
 
-const API = "https://darkslategray-hippopotamus-856839.hostingersite.com/dashboard-api/machines";
-const wardAPI = "https://darkslategray-hippopotamus-856839.hostingersite.com/dashboard-api/wards";
+const API = "https://mcuconnect.com/dashboard-api/machines";
+const wardAPI = "https://mcuconnect.com/dashboard-api/wards";
 
 const columns = [
   {
