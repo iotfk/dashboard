@@ -6,7 +6,7 @@ import { MachineContext } from '../../hooks/ContextAPI/MachineContext';
 import ReactToPrint from 'react-to-print';
 import PrintTable from './PrintTable'; // Import the PrintTable component
 
-const API = "https://darkslategray-hippopotamus-856839.hostingersite.com/dashboard-api/machines";
+const API = "https://mcuconnect.com/dashboard-api/machines";
 
 const getCurrentTime = () => new Date().toLocaleTimeString();
 
