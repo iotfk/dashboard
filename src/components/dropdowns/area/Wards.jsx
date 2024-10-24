@@ -15,7 +15,7 @@ function Wards({ selectedZones, onSelectWard }) {
      //   if (selectedZones.length > 0) {
         if (1 > 0) {
          //   fetch(`https://darkslategray-hippopotamus-856839.hostingersite.com/dashboard-api/wards?zones=${selectedZones.join(',')}`)
-            fetch('https://darkslategray-hippopotamus-856839.hostingersite.com/dashboard-api/wards')
+            fetch('https://mcuconnect.com/dashboard-api/wards')
                 .then(response => response.json())
                 .then(data => {
                     // console.log('Fetched wards:', data);
