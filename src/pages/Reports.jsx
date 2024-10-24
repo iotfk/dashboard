@@ -44,7 +44,7 @@ const handleLoadClick = () => {
   const handleSelectZone = (zones) => {
     setSelectedZones(zones);
     // Fetch and set wards based on selected zones
-    fetch(`https://darkslategray-hippopotamus-856839.hostingersite.com/dashboard-api/wards?zones=${zones.join(',')}`)
+    fetch(`https://mcuconnect.com/dashboard-api/wards?zones=${zones.join(',')}`)
       .then(response => response.json())
       .then(data => setWards(data))
       .catch(error => console.error('Error fetching wards:', error));
@@ -54,7 +54,7 @@ const handleLoadClick = () => {
   const handleSelectWard = (wards) => {
     setSelectedWards(wards);
     // Fetch and set beats based on selected wards
-    fetch(`https://darkslategray-hippopotamus-856839.hostingersite.com/dashboard-api/beats?wards=${wards.join(',')}`)
+    fetch(`https://mcuconnect.com/dashboard-api/beats?wards=${wards.join(',')}`)
       .then(response => response.json())
       .then(data => setBeats(data))
       .catch(error => console.error('Error fetching beats:', error));
@@ -68,7 +68,7 @@ const handleLoadClick = () => {
   // Fetch machine data when selected beats change
 
   useEffect(() => {
-    fetch(`https://darkslategray-hippopotamus-856839.hostingersite.com/dashboard-api/machines`)
+    fetch(`https://mcuconnect.com/dashboard-api/machines`)
       .then((response) => response.json())
       .then((data) => {
         setMachines(data); // Store complete machine data
