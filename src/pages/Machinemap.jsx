@@ -31,7 +31,7 @@ import {
   FaRecycle
 } from "react-icons/fa6";
 
-const API = "https://darkslategray-hippopotamus-856839.hostingersite.com/dashboard-api/machines";
+const API = "https://mcuconnect.com/dashboard-api/machines";
 //var apiData;
 
 
