@@ -25,11 +25,11 @@ function App() {
             <Routes>
             {/* <Route path='/machinedata-hidden' element={<Machinedata style={{ display: 'none' }} />} /> */}
          
-              <Route path='/dashboard' element={<Dashboard />} />
-              <Route path='/machinedata' element={<Machinedata />} />
-              <Route path='/machinemap' element={<Machinemap />} />
-              <Route path='/reports' element={<Reports />} />
-              <Route path='/' element={<Navigate to="/dashboard" />} />
+              <Route path='/dashboard' element={<Dashboard />}/>
+              <Route path='/machinedata' element={<Machinedata />}/>
+              <Route path='/machinemap' element={<Machinemap />}/>
+              <Route path='/reports' element={<Reports/>}/>
+{/*               <Route path='/' element={<Navigate to="/dashboard" />} /> */}
             </Routes>
           </Sidebar>
         ) : (
