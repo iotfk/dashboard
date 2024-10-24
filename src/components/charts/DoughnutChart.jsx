@@ -138,7 +138,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Chart } from "chart.js/auto";
 
-const API = "https://darkslategray-hippopotamus-856839.hostingersite.com/dashboard-api/machines";
+const API = "https://mcuconnect.com/dashboard-api/machines";
 
 export default function DoughnutChart() {
   const [fetchAllMachines, setFetchAllMachines] = useState([]);
