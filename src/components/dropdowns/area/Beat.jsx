@@ -69,7 +69,7 @@ function Beat({ beats = [], selectedWards, selectedBeats, setSelectedBeats }) {
 
   return (
     <div className='my-main-container'>
-      <h4>Beat</h4>
+      <h4>Level 3</h4>
       <div className="areaClass">
         <div className="tick">
           <FaCheck />

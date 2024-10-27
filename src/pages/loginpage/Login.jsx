@@ -20,8 +20,8 @@ function Login() {
     //   navigate('/machinedata-hidden');
       window.location.reload(); 
     } else {
-      console.log('Invalid credentials');
-      alert('Invalid credentials');
+      //console.log('Invalid credentials');
+      alert('Invalid Username or password !');
     }
   };
 

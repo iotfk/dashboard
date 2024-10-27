@@ -133,23 +133,55 @@
     min-width: 300px;
   }
   
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .main-cards {
       gap: 10px;
     }
   
     .card {
-      flex: 1 1 calc(50% - 10px); /* Adjust card width for mobile view */
+      flex: 1 1 calc(50% - 10px); 
     }
   
     .charts {
-      flex-direction: column; /* Stack charts on mobile view */
+      flex-direction: column;
       align-items: center;
     }
   
     .charts > .recharts-responsive-container {
       flex: 1 1 100%;
-      margin-bottom: 20px; /* Add margin between charts on mobile */
+      margin-bottom: 20px; 
     }
-  }
+  } */
   
+
+
+/* Mobile styles */
+
+/* Mobile styles for below 768px */
+@media (max-width: 768px) {
+  .main-cards {
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 10px); /* Show 2 cards in a row below 768px */
+  }
+
+  .charts {
+    flex-direction: column; /* Stack charts on mobile view */
+    align-items: center;
+  }
+
+  .charts > .recharts-responsive-container {
+    flex: 1 1 100%;
+    margin-bottom: 20px; /* Add margin between charts on mobile */
+  }
+}
+
+/* For even smaller screens, stack cards on top of each other (optional) */
+@media (max-width: 480px) {
+  .card {
+    flex: 1 1 100%; /* Stack cards in a single column below 480px */
+  }
+}

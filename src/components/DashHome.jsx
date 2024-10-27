@@ -21,31 +21,40 @@ const onlineMachines = alertMachineData.filter(
 
 
   // Function to extract and sum total collection from alertMachineData
+// Function to extract and sum total collection from alertMachineData
 const calculateTotalCollection = () => {
     return alertMachineData.reduce((total, machine) => {
-      const match = machine.collection.match(/\[ ₹ ([\d.]+) K \]/);
-      if (match) {
-        return total + parseFloat(match[1]) * 1000; // Convert to a number and account for 'K'
-      }
-      return total;
+      const collection = parseFloat(machine.collection); // Convert collection string to a number
+      return total + (isNaN(collection) ? 0 : collection); // Add to total if valid number
     }, 0);
   };
-
+  
   const totalCollection = calculateTotalCollection();
 
+//   // Function to extract and sum total items dispensed from alertMachineData
+//   const calculateTotalItemsDispensed = () => {
+//     return alertMachineData.reduce((total, machine) => {
+//       const match = machine.items_dispensed.match(/\[ ([\d.]+) K \]/);
+//       if (match) {
+//         return total + parseFloat(match[1]) * 1000; // Convert to a number and account for 'K'
+//       }
+//       return total;
+//     }, 0);
+//   };
 
-  // Function to extract and sum total items dispensed from alertMachineData
-  const calculateTotalItemsDispensed = () => {
+//   const totalItemsDispensed = calculateTotalItemsDispensed();
+
+
+// Function to extract and sum total items dispensed from alertMachineData
+const calculateTotalItemsDispensed = () => {
     return alertMachineData.reduce((total, machine) => {
-      const match = machine.items_dispensed.match(/\[ ([\d.]+) K \]/);
-      if (match) {
-        return total + parseFloat(match[1]) * 1000; // Convert to a number and account for 'K'
-      }
-      return total;
+      const itemsDispensed = parseFloat(machine.items_dispensed); // Convert items_dispensed string to a number
+      return total + (isNaN(itemsDispensed) ? 0 : itemsDispensed); // Add to total if valid number
     }, 0);
   };
-
+  
   const totalItemsDispensed = calculateTotalItemsDispensed();
+  
 
     return (
 

@@ -11,7 +11,7 @@ function Zone({ onSelectZone }) {
 
   const { dropDownZoneNames, setDropDownZoneNames} = useContext(MachineContext)
   useEffect(() => {
-    fetch('http://localhost:7000/zones')
+    fetch('https://mcuconnect.com/dashboard-api/zones')
       .then(response => response.json())
       .then(data => {
       //  console.log('Fetched zones:', data);
@@ -78,7 +78,7 @@ function Zone({ onSelectZone }) {
 
   return (
     <div className='my-main-container'>
-      <h4>Zone</h4>
+      <h4>Level 1</h4>
       <div className="areaClass">
         <div className="tick">
           <FaCheck />

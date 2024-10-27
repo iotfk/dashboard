@@ -118,7 +118,7 @@ import React, { useEffect, useRef, useContext, useState } from "react";
 import { Chart } from "chart.js/auto";
 import { MachineContext } from "../../hooks/ContextAPI/MachineContext";
 
-const API = "https://darkslategray-hippopotamus-856839.hostingersite.com/dashboard-api/machines";
+const API = "https://mcuconnect.com/dashboard-api/machines";
 
 export default function PieChart() {
   const [fetchAllMachines, setFetchAllMachines] = useState([]);

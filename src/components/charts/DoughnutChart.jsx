@@ -138,7 +138,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Chart } from "chart.js/auto";
 
-const API = "http://localhost:7000/machines";
+const API = "https://mcuconnect.com/dashboard-api/machines";
 
 export default function DoughnutChart() {
   const [fetchAllMachines, setFetchAllMachines] = useState([]);
@@ -164,25 +164,27 @@ export default function DoughnutChart() {
   // Function to get the count of machines with different stock statuses
   const getLowStockCount = () => {
     return fetchAllMachines.filter(
-      (machine) => machine.stock_status.trim().toLowerCase() === 'low'
+      (machine) => machine.stock_status?.trim().toLowerCase() === 'low'
     ).length;
   };
 
-  const getEmptyStockMachines = () => {
-    return fetchAllMachines.filter(
-      (machine) => machine.stock_status.trim().toLowerCase() === 'empty'
-    ).length;
-  };
+// Function to get the count of machines with "Empty" stock status
+const getEmptyStockMachines = () => {
+  return fetchAllMachines.filter(
+      (machine) => machine.stock_status?.trim().toLowerCase() === 'empty'
+  ).length;
+};
+
 
   const getOKStockMachines = () => {
     return fetchAllMachines.filter(
-      (machine) => machine.stock_status.trim().toLowerCase() === 'ok'
+      (machine) => machine.stock_status?.trim().toLowerCase() === 'ok'
     ).length;
   };
 
   const getERRORStockMachines = () => {
     return fetchAllMachines.filter(
-      (machine) => machine.stock_status.trim().toLowerCase() === 'error'
+      (machine) => machine.stock_status?.trim().toLowerCase() === 'error'
     ).length;
   };
 

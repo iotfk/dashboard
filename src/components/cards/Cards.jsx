@@ -21,66 +21,121 @@ const onlineMachines = alertMachineData.filter(
     (machine) => machine.status.toLowerCase() === 'online'
   );
 
-// Function to get the count of machines with "Low" stock status
+// // Function to get the count of machines with "Low" stock status
+// const getLowStockCount = () => {
+//     return alertMachineData.filter(
+//       (machine) => machine.stock_status.trim().toLowerCase() === 'low'
+//     ).length;
+//   };
+
+  // Function to get the count of machines with "Low" stock status
 const getLowStockCount = () => {
     return alertMachineData.filter(
-      (machine) => machine.stock_status.trim().toLowerCase() === 'low'
+        (machine) => machine.stock_status?.trim().toLowerCase() === 'low'
     ).length;
-  };
+};
+
 
  // Function to filter machines with "Empty" stock status
+// Function to get the count of machines with "Empty" stock status
 const getEmptyStockMachines = () => {
     return alertMachineData.filter(
-      (machine) => machine.stock_status.trim().toLowerCase() === 'empty'
+        (machine) => machine.stock_status?.trim().toLowerCase() === 'empty'
     ).length;
-  };
+};
 
   //Function to Filter Machines with Burning Status
   const getFilteredByBurningStatus = () =>{
     return alertMachineData.filter((machine)=> machine.burning_status.trim().toLowerCase() ==='burning'  ).length;
   }
 
+// // Function to extract and sum total collection from alertMachineData
+// const calculateTotalCollection = () => {
+//     return alertMachineData.reduce((total, machine) => {
+//       const match = machine.collection.match(/\[ ₹ ([\d.]+) K \]/);
+//       if (match) {
+//         return total + parseFloat(match[1]) * 1000; // Convert to a number and account for 'K'
+//       }
+//       return total;
+//     }, 0);
+//   };
+
+//   const totalCollection = calculateTotalCollection();
+
+
+// Function to extract and sum total collection from alertMachineData
+// const calculateTotalCollection = () => {
+//     return alertMachineData.reduce((total, machine) => {
+//       const collection = parseFloat(machine.collection); // Convert collection string to a number
+//       return total + (isNaN(collection) ? 0 : collection); // Add to total if valid number
+//     }, 0);
+//   };
+  
+//   const totalCollection = calculateTotalCollection();
+
+
 // Function to extract and sum total collection from alertMachineData
 const calculateTotalCollection = () => {
     return alertMachineData.reduce((total, machine) => {
-      const match = machine.collection.match(/\[ ₹ ([\d.]+) K \]/);
-      if (match) {
-        return total + parseFloat(match[1]) * 1000; // Convert to a number and account for 'K'
-      }
-      return total;
+      const collection = parseFloat(machine.collection); // Convert collection string to a number
+      return total + (isNaN(collection) ? 0 : collection); // Add to total if valid number
     }, 0);
   };
-
+  
   const totalCollection = calculateTotalCollection();
-
-
+  
 
    // Function to extract and sum total items dispensed from alertMachineData
-   const calculateTotalItemsDispensed = () => {
+//    const calculateTotalItemsDispensed = () => {
+//     return alertMachineData.reduce((total, machine) => {
+//       const match = machine.items_dispensed.match(/\[ ([\d.]+) K \]/);
+//       if (match) {
+//         return total + parseFloat(match[1]) * 1000; // Convert to a number and account for 'K'
+//       }
+//       return total;
+//     }, 0);
+//   };
+
+//   const totalItemsDispensed = calculateTotalItemsDispensed();
+
+
+// Function to extract and sum total items dispensed from alertMachineData
+const calculateTotalItemsDispensed = () => {
     return alertMachineData.reduce((total, machine) => {
-      const match = machine.items_dispensed.match(/\[ ([\d.]+) K \]/);
-      if (match) {
-        return total + parseFloat(match[1]) * 1000; // Convert to a number and account for 'K'
-      }
-      return total;
+      const itemsDispensed = parseFloat(machine.items_dispensed); // Convert items_dispensed string to a number
+      return total + (isNaN(itemsDispensed) ? 0 : itemsDispensed); // Add to total if valid number
     }, 0);
   };
-
+  
   const totalItemsDispensed = calculateTotalItemsDispensed();
+  
+
+    // // Function to extract and sum total burning cycles from alertMachineData
+    // const calculateTotalBurningCycles = () => {
+    //     return alertMachineData.reduce((total, machine) => {
+    //       const match = machine.burning_cycles.match(/\[ ([\d.]+) K \]/);
+    //       if (match) {
+    //         return total + parseFloat(match[1]) * 1000; // Convert to a number and account for 'K'
+    //       }
+    //       return total;
+    //     }, 0);
+    //   };
+
+    //   const totalBurningCycles = calculateTotalBurningCycles();
+
+// Function to extract and sum total burning cycles from alertMachineData
+const calculateTotalBurningCycles = () => {
+    return alertMachineData.reduce((total, machine) => {
+      const burningCycles = parseFloat(machine.burning_cycles); // Convert burning_cycles string to a number
+      return total + (isNaN(burningCycles) ? 0 : burningCycles); // Add to total if valid number
+    }, 0);
+  };
+  
+  const totalBurningCycles = calculateTotalBurningCycles();
+  
 
 
-    // Function to extract and sum total burning cycles from alertMachineData
-    const calculateTotalBurningCycles = () => {
-        return alertMachineData.reduce((total, machine) => {
-          const match = machine.burning_cycles.match(/\[ ([\d.]+) K \]/);
-          if (match) {
-            return total + parseFloat(match[1]) * 1000; // Convert to a number and account for 'K'
-          }
-          return total;
-        }, 0);
-      };
 
-      const totalBurningCycles = calculateTotalBurningCycles();
 //   useEffect(()=>{
 // console.log("Machines with Empty Stocks:", getEmptyStockMachines());
 

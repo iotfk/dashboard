@@ -12,8 +12,10 @@ function Wards({ selectedZones, onSelectWard }) {
     const { dropDownWardNames, setDropDownWardNames } = useContext(MachineContext);
 
     useEffect(() => {
-        if (selectedZones.length > 0) {
-            fetch(`http://localhost:7000/wards?zones=${selectedZones.join(',')}`)
+        //if (selectedZones.length > 0) {
+            if (1 > 0) {
+        //    fetch(`http://localhost:7000/wards?zones=${selectedZones.join(',')}`)
+        fetch('https://mcuconnect.com/dashboard-api/wards')
                 .then(response => response.json())
                 .then(data => {
                     // console.log('Fetched wards:', data);
@@ -129,7 +131,7 @@ function Wards({ selectedZones, onSelectWard }) {
 
     return (
         <div className='my-main-container'>
-            <h4>Ward</h4>
+            <h4>Level 2</h4>
             <div className="areaClass">
                 <div className="tick">
                     <FaCheck />
