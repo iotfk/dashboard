@@ -70,7 +70,7 @@ const Modal = ({ isOpen, onClose, machineData }) => {
 function ResponsiveTable({ selectedStatus, selectedStockStatus, selectedBurningStatus, selectedZones, selectedWards = [], selectedBeats = [], }) {
   const [data, setData] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
-  const [dataLimit, setDataLimit] = useState(5);
+  const [dataLimit, setDataLimit] = useState(15);
 
   const [wordData, setWordData] = useState([]);
   const [beatsData, setBeatsData] = useState([])
