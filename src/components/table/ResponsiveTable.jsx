@@ -128,9 +128,11 @@ const findMachineDataBySerialNumber = (serialNumber) => {
 };
 
 
-// On "View" button click, open the modal with the relevant data
+
+// Updated "View" button click handler
 const handleViewClick = (machineString) => {
-  const match = machineString.match(/FN\d{3}[A-Z]\d{3} \[S\/N: \d{5}\]/); 
+  // Regex to match patterns like EI00001[TF0008], EI00002[TF0009], etc.
+  const match = machineString.match(/[A-Z]{2}\d{5}\[TF\d{4}\]/);
   const machineIdentifier = match ? match[0] : 'Identifier not found';
 
   if (machineIdentifier !== 'Identifier not found') {
