@@ -111,27 +111,44 @@ function ResponsiveTable({ selectedStatus, selectedStockStatus, selectedBurningS
   // };
 
 
-  // On "View" button click, open the modal with the relevant data
-  const handleViewClick = (machineString) => {
-    // Match the pattern MXXXXX[XXXXX] or similar formats
-    const match = machineString.match(/M\d{5}\[\w+\]/);
+  // // On "View" button click, open the modal with the relevant data
+  // const handleViewClick = (machineString) => {
+  //   // Match the pattern MXXXXX[XXXXX] or similar formats
+  //   const match = machineString.match(/M\d{5}\[\w+\]/);
 
-    const machineIdentifier = match ? match[0] : 'Identifier not found';
+  //   const machineIdentifier = match ? match[0] : 'Identifier not found';
 
-    if (machineIdentifier !== 'Identifier not found') {
-      const machineData = findMachineDataBySerialNumber(machineIdentifier);
-      if (machineData) {
-        setModalData(machineData);  // Set the modal data
-        setIsModalOpen(true);       // Open the modal
-      } else {
-        alert('Machine data not found!');
-      }
+  //   if (machineIdentifier !== 'Identifier not found') {
+  //     const machineData = findMachineDataBySerialNumber(machineIdentifier);
+  //     if (machineData) {
+  //       setModalData(machineData);  // Set the modal data
+  //       setIsModalOpen(true);       // Open the modal
+  //     } else {
+  //       alert('Machine data not found!');
+  //     }
+  //   } else {
+  //     alert('Machine identifier not found!');
+  //   }
+  // };
+
+// Updated "View" button click handler
+const handleViewClick = (machineString) => {
+  // Regex to match patterns like EI00001[TF0008], EI00002[TF0009], etc.
+  const match = machineString.match(/[A-Z]{2}\d{5}\[TF\d{4}\]/);
+  const machineIdentifier = match ? match[0] : 'Identifier not found';
+
+  if (machineIdentifier !== 'Identifier not found') {
+    const machineData = findMachineDataBySerialNumber(machineIdentifier);
+    if (machineData) {
+      setModalData(machineData);  // Set the modal data
+      setIsModalOpen(true);       // Open the modal
     } else {
-      alert('Machine identifier not found!');
+      alert('Machine data not found!');
     }
-  };
-
-
+  } else {
+    alert('Machine identifier not found!');
+  }
+};
 
 
   // Close the modal
