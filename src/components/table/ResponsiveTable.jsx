@@ -4,7 +4,7 @@ import ReactPaginate from 'react-paginate';
 import './table.css'
 import { FaCheck, FaXmark } from "react-icons/fa6";
 import { MachineContext } from '../../hooks/ContextAPI/MachineContext';
-
+const defaultEntries = 10;
 const API = "https://mcuconnect.com/dashboard-api/machines";
 const wardAPI = "https://mcuconnect.com/dashboard-api/wards";
 
@@ -70,7 +70,7 @@ const Modal = ({ isOpen, onClose, machineData }) => {
 function ResponsiveTable({ selectedStatus, selectedStockStatus, selectedBurningStatus, selectedZones, selectedWards = [], selectedBeats = [], }) {
   const [data, setData] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
-  const [dataLimit, setDataLimit] = useState(15);
+  const [dataLimit, setDataLimit] = useState(defaultEntries);
 
   const [wordData, setWordData] = useState([]);
   const [beatsData, setBeatsData] = useState([])
